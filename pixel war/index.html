@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIXEL WAR</title>
+  <link rel="stylesheet" href="index.css">
+  <script type="module" src="pixelRequete.js"></script>
+</head>
+
+<header>
+  <h1>PIXEL IUT WAR</h1>
+</header>
+
+<body>
+  <video id="background-video" autoplay loop muted>
+
+    <source src="bg.mp4" type="video/mp4">
+      
+  </video>
+  <div id="page">
+
+    <div>
+      <img src="pixelWar.png" alt="logo pixel War deux combatants a l'epe">
+      <table>
+        <thead>
+          <tr>
+            <th>nom</th>
+            <th>Equipe</th>
+            <th>derniere modification</th>
+            <th>Banni</th>
+          </tr>
+        </thead>
+        <tbody> </tbody>   
+      </table>
+    </div>
+
+    <canvas id="canvas" width="500" height="500">
+        Désolé, votre navigateur ne prend pas en charge &lt;canvas&gt;.
+    </canvas>
+
+    <div>
+
+      <h3>identification obligatoire</h3>
+
+      <input id="identification" type="text">
+
+
+      <h3>Choisir une couleur</h3>
+
+      <input type="color" id="color">
+
+      <h3>Temps d'attente avant modification</h3>
+
+      <p id="tempsAttente">Vous pouvez poser un pixel !</p>
+
+      <h3>Choisir votre equipe</h3>
+
+      <div>
+        <input type="radio" id="equipe1" name="equipe" value="1"/>
+        <label for="equipe1">equipe 1</label>
+      </div>
+      <div>
+        <input type="radio" id="equipe2" name="equipe" value="2"/>
+        <label for="equipe1">equipe 2</label>
+      </div>
+      <div>
+        <input type="radio" id="equipe3" name="equipe" value="3"/>
+        <label for="equipe2">equipe 3</label>
+      </div>
+      <div>
+        <input type="radio" id="equipe4" name="equipe" value="4"/>
+        <label for="equipe4">equipe 4</label>
+      </div>
+
+      <h3>derniere information retournee par le serveur</h3>
+
+      <p id="message">message du serveur</p>
+    </div>
+  </div>
+</body>
+</html>
